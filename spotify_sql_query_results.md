@@ -1,6 +1,6 @@
 
-# ** Trend Analysis Questions **
-## ** _Questions to Analyze trend_ **
+# Trend Analysis Questions 
+## _Questions to Analyze trend_
 
 1.Top 10 genres have the highest average track popularity?
 2.Top 10 performing artists 
@@ -13,7 +13,7 @@
 9.no of popular songs of top 5 artists
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## ** Trend Analysis **
+## Trend Analysis
 1.Top 10 genres have the highest average track popularity?
 
 ```SQL
