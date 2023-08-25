@@ -26,4 +26,5 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10;
 
+<img width="227" alt="avg_popularity track genre" src="https://github.com/SRG69/Spotify-database/assets/131379055/d6449b78-3441-4ddf-9744-3ebe56718367">
 
