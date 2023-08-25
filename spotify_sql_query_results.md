@@ -16,13 +16,13 @@
 **Trend Analysis **
 1.Top 10 genres have the highest average track popularity?
 
-SELECT DISTINCT
+`SELECT DISTINCT
 	track_genre,
     ROUND(AVG(popularity),2) avg_popularity
 FROM 
 	spotify
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 10;
+LIMIT 10;`
 
 
