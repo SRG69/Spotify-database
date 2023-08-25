@@ -1,9 +1,9 @@
 
-# **Trend Analysis Questions **
-## **_Questions to Analyze trend_**
+# ** Trend Analysis Questions **
+## ** _Questions to Analyze trend_ **
 
 1.Top 10 genres have the highest average track popularity?
-2.top 10 performing artists 
+2.Top 10 performing artists 
 3.Top 5 songs currently in trend
 4.What type of Emotions are popular ?
 5.T0p 10 artists and there highest no_of tracks
@@ -13,7 +13,7 @@
 9.no of popular songs of top 5 artists
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## **Trend Analysis **
+## ** Trend Analysis **
 1.Top 10 genres have the highest average track popularity?
 
 ```SQL
