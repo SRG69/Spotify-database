@@ -25,7 +25,7 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10;
-<img width="212" alt="Duration People Prefer" src="https://github.com/SRG69/Spotify-database/assets/131379055/96a99ec0-0f93-490a-a437-5ee7ac961242">
+
 
 
 
