@@ -25,10 +25,13 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10;
+```
+
 ![](https://github.com/SRG69/Spotify-database/blob/main/insigt_png/avg_popularity%20track%20genre.png)
 
 
 
+![Screenshot 2023-08-25 212235](https://github.com/SRG69/Spotify-database/assets/131379055/21463d05-d6e6-4612-8bcd-4d8980abddfa)
 
 
 
