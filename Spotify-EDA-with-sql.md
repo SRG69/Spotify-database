@@ -1,4 +1,4 @@
-# Performing EDA with MySQL And Ms Power BI 
+# 🕵️ Performing EDA with MySQL 🕵️
 
 ## Here are some questions For EDA 
 
