@@ -17,7 +17,7 @@ DROP COLUMN duration_ms;
 ```
 
 ## Basic Overview:
-1. How many Duplicates valur are there In dataset ?
+1. How many Duplicates values are there in dataset ?
    
 ```SQL
 SELECT 
