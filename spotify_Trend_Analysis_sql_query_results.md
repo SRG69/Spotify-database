@@ -52,7 +52,7 @@ LIMIT 5;
 ![Screenshot 2023-08-26 112222](https://github.com/SRG69/Spotify-database/assets/131379055/98420b65-04b5-4d1e-a938-17c5e314a863)
 
 4. Which categories of emotions in songs are currently popular among listeners?
-   _Emotion of a song also known as (valence) is measured between 0.0 to 1.0_
+- _Emotion of a song also known as (valence) is measured between 0.0 to 1.0_
 ```SQL
 SELECT 
     CASE 
