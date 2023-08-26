@@ -1,5 +1,5 @@
 
-# Trend Analysis Questions 
+# 🔝 Trend Analysis 🔝
 ## _Questions to Analyze trend_
 
 1. What is The avg popularity for the top 10 genre ?
