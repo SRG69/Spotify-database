@@ -24,7 +24,7 @@ LIMIT 10;
 ```
 ![Screenshot 2023-08-26 110623](https://github.com/SRG69/Spotify-database/assets/131379055/2ae5ce50-e439-47ef-a4df-755adf78ae7a)
 
-2. Who are the Top 5 performing artists?
+2. Who are the Top 5 popular artists?
 
 ```SQL
 SELECT DISTINCT
@@ -40,7 +40,7 @@ LIMIT 5;
 3. What are the current top 5 songs that are trending?
 ```SQL
 SELECT DISTINCT
-	track_name,
+    track_name,
     artists,
     popularity
 FROM 
@@ -51,14 +51,14 @@ LIMIT 5;
 ![Screenshot 2023-08-26 112222](https://github.com/SRG69/Spotify-database/assets/131379055/98420b65-04b5-4d1e-a938-17c5e314a863)
 
 4. Which categories of emotions in songs are currently popular among listeners?
+   _Emotion of a song also known as (valence) is measured between 0.0 to 1.0_
 ```SQL
 SELECT 
     CASE 
-		WHEN valence >= 0.8 THEN 'Positive Emotion'
+	WHEN valence >= 0.8 THEN 'Positive Emotion'
         WHEN valence BETWEEN 0.5 AND 0.7 THEN 'Neutral Emotion'
         ELSE 'Negative Emotion' 
 	END AS emotions,
-    
     COUNT(DISTINCT track_id) Total_songs
 FROM 
 	spotify
@@ -69,13 +69,13 @@ ORDER BY 2 DESC;
 
 5. What is the comparative popularity between explicit and non-explicit content?
 ``` SQL
-    SELECT 
-		explicit,
-        ROUND(AVG(popularity),2) avg_popularity
-	FROM 
-		spotify
-	GROUP BY 1
-	ORDER BY 2 DESC;
+SELECT 
+	explicit,
+	ROUND(AVG(popularity),2) avg_popularity
+FROM 
+	spotify
+GROUP BY 1
+ORDER BY 2 DESC;
 ```
 ![Screenshot 2023-08-26 115507](https://github.com/SRG69/Spotify-database/assets/131379055/a6911e42-c7eb-468a-9aad-e64be37fa0f9)
 
