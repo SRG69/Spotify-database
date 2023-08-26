@@ -7,12 +7,8 @@
 3. What are the current top 5 songs that are trending?
 4. Which categories of emotions in songs are currently popular among listeners?
 5. What is the comparative popularity between explicit and non-explicit content?
-6. Top 10 artists and there highest no_of tracks
-7. What percentage of explicit and non-explicit tracksa are there in the dataset ?
-8. avg_durations_song
-9. no of popular songs of top 5 artists
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Trend Analysis
 1.What is The avg popularity For the top 10 genre ?
 
