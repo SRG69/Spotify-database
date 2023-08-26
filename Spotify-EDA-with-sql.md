@@ -109,3 +109,6 @@ LIMIT 10;
 ![Screenshot 2023-08-26 214337](https://github.com/SRG69/Spotify-database/assets/131379055/26fe489d-9ab3-4da1-a4b0-b108d932e2c4)
 
 
+
+
+
