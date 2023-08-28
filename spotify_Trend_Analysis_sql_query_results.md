@@ -85,11 +85,6 @@ ORDER BY 2 DESC;
 
 6. What is the music duration people prefer?
 
-	1. sweet spot between 3min and 3.9 min
-	2. short between 2 and 2.9
-	3. very short < 1.9
-	4. long between 4 and 5.9
-
 ```SQL
 WITH cte AS (
 SELECT DISTINCT
