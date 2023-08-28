@@ -10,7 +10,8 @@
 6. What is the music duration people prefer ?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Trend Analysis
+## Trend Analysis 📉
+
 1.What is The avg popularity For the top 10 genre ?
 
 ```SQL
