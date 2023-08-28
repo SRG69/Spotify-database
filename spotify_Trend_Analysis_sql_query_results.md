@@ -25,18 +25,20 @@ LIMIT 10;
 ```
 ![Screenshot 2023-08-26 110623](https://github.com/SRG69/Spotify-database/assets/131379055/2ae5ce50-e439-47ef-a4df-755adf78ae7a)
 
-2. Who are the Top 5 popular artists?
+2. Who are the Top 10 popular artists?
 
 ```SQL
-SELECT DISTINCT
+SELECT
 	artists,
-    popularity
-FROM 
+	SUM(popularity) AS total_popularity
+FROM
 	spotify
+GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 5;
+LIMIT 10;
 ```
-![Screenshot 2023-08-26 111304](https://github.com/SRG69/Spotify-database/assets/131379055/cb370d4f-3d2a-411c-a95e-1472b3df3ffa)
+![Screenshot 2023-08-28 124633](https://github.com/SRG69/Spotify-database/assets/131379055/47a7d24a-9448-44cc-9c4b-5cc54f369762)
+
 
 3. What are the current top 5 songs that are trending?
 ```SQL
@@ -95,11 +97,11 @@ SELECT DISTINCT
     duration_min,
     
 	CASE 
-	WHEN duration_min BETWEEN 3 AND 3.9 THEN 'sweet spot' 
-        WHEN duration_min BETWEEN 2 AND 2.9 THEN 'short'
-        WHEN duration_min < 1.9 THEN 'Very short'
-        WHEN duration_min BETWEEN 4 AND 5.9 THEN 'Long'
-        ELSE 'Very Long'
+	WHEN duration_min BETWEEN 3 AND 3.9 THEN '3 - 3.9'
+        WHEN duration_min BETWEEN 2 AND 2.9 THEN '2 - 2.9'
+        WHEN duration_min < 1.9 THEN '< 1.9'
+        WHEN duration_min BETWEEN 4 AND 5.9 THEN '4 - 5.9'
+        ELSE '> 6'
 	END AS duration,
     
     popularity
@@ -107,24 +109,22 @@ FROM
 	spotify
 ORDER BY 5 DESC)
 
- #duration people prefer 
+ #duration people prefer
+
 SELECT 
 	duration,
 	COUNT(duration) 
-		-- / 
--- 	 (SELECT COUNT(DISTINCT track_id) FROM spotify) * 100
+		-- /                                                       #<-- using this query to find percentage
+        -- (SELECT COUNT(DISTINCT track_id) FROM spotify) * 100
     AS 'duration_people_prefer'
 FROM cte
 UP BY 1
 ORDER BY 2 DESC;
 
-SELECT 
-	ROUND(AVG(duration_min),2) duration_min
-FROM 
-	spotify
 ```
-![Screenshot 2023-08-26 171947](https://github.com/SRG69/Spotify-database/assets/131379055/5597bab9-5b73-4467-b397-3075620c460b)
+![Screenshot 2023-08-28 130823](https://github.com/SRG69/Spotify-database/assets/131379055/a94dc097-48d5-4d1c-93c1-840e5d8efadc)
 
-![duration](https://github.com/SRG69/Spotify-database/assets/131379055/850579d1-20b9-463f-8654-bdcc8089baac)
+![Screenshot 2023-08-28 131054](https://github.com/SRG69/Spotify-database/assets/131379055/1a92e917-ebcc-4458-aa86-ed55abe9f9b8)
+
 
 
