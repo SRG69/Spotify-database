@@ -57,18 +57,20 @@ FROM
 ![Screenshot 2023-08-26 212934](https://github.com/SRG69/Spotify-database/assets/131379055/0764003e-28b4-4455-a4c9-660695f0c975)
 
 ## Artist Insights 👨‍🎤:
-1. Identify the top 5 most popular artists based on the average track popularity.
+1. Identify the top 10 most popular artists based popularity.
+
+
 ```SQL
-SELECT 
-	artists, 
-	ROUND(AVG(popularity),2)  average_popularity
-FROM 
+SELECT
+	artists,
+	SUM(popularity) AS total_popularity
+FROM
 	spotify
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 5;
+LIMIT 10;
 ```
-![Screenshot 2023-08-26 213140](https://github.com/SRG69/Spotify-database/assets/131379055/14e4c6e8-b140-48ff-b326-2a5a37cabd11)
+![Screenshot 2023-08-28 124633](https://github.com/SRG69/Spotify-database/assets/131379055/47a7d24a-9448-44cc-9c4b-5cc54f369762)
 
 2. Who are the top 10 artists who has most contribution of songs in the dataset ?
 ```SQL
