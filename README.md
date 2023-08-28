@@ -9,7 +9,7 @@ The primary goal was to extract valuable insights into track attributes, popular
 
 1. **Data Collection**📥: The dataset containing information about Spotify tracks, and details such as artist names, album information, track names,
    popularity scores, durations, explicit content, danceability, energy levels, and more,
-   was collected as the foundation for this analysis.
+   was collected as the foundation for this analysis. [Here Is the source of the data ](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
 
 2. **Exploratory Data Analysis (EDA)** 🕵️: The project set about with an in-depth EDA phase, facilitated by SQL queries, to discern the dataset's structure, identify any
    data gaps, and uncover patterns in distributions, correlations, and basic statistical measures.
