@@ -28,11 +28,11 @@ The primary goal was to extract valuable insights into track attributes, popular
 With an avg danceabilty of **0.78**, energy Of **0.72**  indicating high-energy, danceable music. indicating a preference for high-energy, danceable music among listeners.
 
 2. **Genre Analysis 🎷🎹:** Furthur analysis revealed the Top 5 genre that were popular among listners were
-  - Pop-film
-  - K-pop
-  - Chill
-  - Sad
-  - Grunge
+     - Pop-film
+     - K-pop
+     - Chill
+     - Sad
+     - Grunge
     
 3. **Emotion Analysis 🎭:** **64%** of listeners were drawn to songs carrying a sense of Negative Emotion. Additionally, there was a notable preference for songs with **Explicit content**, accounting for **52%** , compared to **47%** for **Non-Explicit** alternatives.
 
