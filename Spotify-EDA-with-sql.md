@@ -1,6 +1,6 @@
 # 🕵️ Performing EDA with MySQL 🕵️
 
-## Here are some questions For EDA 
+## Here are some questions For EDA ❓
 
 ### Changing Duration Millisecond Into duration Min
 ```SQL
@@ -16,7 +16,7 @@ ALTER TABLE	spotify
 DROP COLUMN duration_ms;
 ```
 
-## Basic Overview:
+## Basic Overview 👀: 
 1. How many Duplicates values are there in dataset ?
    
 ```SQL
@@ -56,7 +56,7 @@ FROM
 ```
 ![Screenshot 2023-08-26 212934](https://github.com/SRG69/Spotify-database/assets/131379055/0764003e-28b4-4455-a4c9-660695f0c975)
 
-## Artist Insights:
+## Artist Insights 👨‍🎤:
 1. Identify the top 5 most popular artists based on the average track popularity.
 ```SQL
 SELECT 
@@ -83,7 +83,7 @@ LIMIT 10;
 ```
 ![Screenshot 2023-08-26 213617](https://github.com/SRG69/Spotify-database/assets/131379055/663a694b-d2d8-496c-be31-9a4065116514)
 
-## Genre Analysis
+## Genre Analysis 🎤🎸
 
 1. What are the unique genres present in the dataset.
 ```SQL
