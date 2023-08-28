@@ -26,19 +26,19 @@ LIMIT 10;
 ```
 ![Screenshot 2023-08-26 110623](https://github.com/SRG69/Spotify-database/assets/131379055/2ae5ce50-e439-47ef-a4df-755adf78ae7a)
 
-2. Who are the Top 10 popular artists?
+2. Who are the Top 5 current popular artists?
 
 ```SQL
-SELECT
-	artists,
-	SUM(popularity) AS total_popularity
-FROM
+SELECT 
+	artists, 
+	ROUND(AVG(popularity),2)  average_popularity
+FROM 
 	spotify
 GROUP BY 1
 ORDER BY 2 DESC
-LIMIT 10;
+LIMIT 5;
 ```
-![Screenshot 2023-08-28 124633](https://github.com/SRG69/Spotify-database/assets/131379055/47a7d24a-9448-44cc-9c4b-5cc54f369762)
+![Screenshot 2023-08-26 213140](https://github.com/SRG69/Spotify-database/assets/131379055/14e4c6e8-b140-48ff-b326-2a5a37cabd11)
 
 
 3. What are the current top 5 songs that are trending?
