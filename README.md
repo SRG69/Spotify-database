@@ -14,4 +14,6 @@ The primary goal was to extract valuable insights into track attributes, popular
 2. **Exploratory Data Analysis (EDA)** 🕵️: The project set about with an in-depth EDA phase, facilitated by SQL queries, to discern the dataset's structure, identify any
    data gaps, and uncover patterns in distributions, correlations, and basic statistical measures.
 
-3. **Trend Analysis**📈: 
+3. **Trend Analysis**📈:To discover your favorite music, we took a closer look at trends. We studied things like popularity, which songs are popular right now, top music styles, and more. This helped us understand how your music preferences are changing over time.
+
+4. 
